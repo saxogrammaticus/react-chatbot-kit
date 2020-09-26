@@ -69,7 +69,7 @@ const Chatbot = ({
       headerText={headerText}
       placeholderText={placeholderText}
       fetch_rate = {fetch_rate}
-      action_provider = {action_provider}
+      action_provider = {actionProv}
     />
   );
 };
