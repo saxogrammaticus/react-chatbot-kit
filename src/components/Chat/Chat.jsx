@@ -20,7 +20,8 @@ const Chat = ({
   customStyles,
   headerText,
   placeholderText,
-  fetch_rate
+  fetch_rate,
+  action_provider
 }) => {
   const { messages } = state;
   const chatContainerRef = useRef(null);
