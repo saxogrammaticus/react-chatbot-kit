@@ -125,7 +125,7 @@ const Chat = ({
     header = headerText;
   }
 
-  let placeholder = "Write your message here";
+  let placeholder = "Something else here.";
   if (placeholderText) {
     placeHolder = placeholderText;
   }
