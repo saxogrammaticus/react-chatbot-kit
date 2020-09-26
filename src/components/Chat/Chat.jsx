@@ -40,7 +40,7 @@ const Chat = ({
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log('This will run every two second!');
+      action_provider.fetch_message();
     }, 2000);
     return () => clearInterval(interval);
   }, []);
