@@ -26,7 +26,7 @@ const Chat = ({
   const chatContainerRef = useRef(null);
 
   const [input, setInputValue] = useState("");
-
+  
   const scrollIntoView = () => {
     setTimeout(() => {
       chatContainerRef.current.scrollTop =
@@ -120,18 +120,30 @@ const Chat = ({
     customButtonStyle.backgroundColor = customStyles.chatButton.backgroundColor;
   }
 
-  let header = `Conversation with ${botName}`;
+  let header = `En samtale med N.F.S Grundtvig`;
   if (headerText) {
     header = headerText;
   }
 
-  let placeholder = "Something else here.";
+  let placeholder = "Skriv noget...";
   if (placeholderText) {
     placeHolder = placeholderText;
   }
 
+
+  const IntervalExample = () => {
+    const [seconds, setSeconds] = useState(0);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setSeconds(seconds => seconds + 1);
+      }, 1000);
+      return () => clearInterval(interval);
+    }, []);
+
   return (
     <div className="react-chatbot-kit-chat-container">
+      {seconds} seconds have elapsed since mounting.
       <div className="react-chatbot-kit-chat-inner-container">
         <ConditionallyRender
           ifTrue={customComponents.header}
@@ -171,6 +183,8 @@ const Chat = ({
       </div>
     </div>
   );
+
+
 };
 
 export default Chat;

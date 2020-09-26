@@ -21,6 +21,7 @@ const Chatbot = ({
   config,
   headerText,
   placeholderText,
+  fetch_rate
 }) => {
   if (!config || !actionProvider || !messageParser) {
     return (
@@ -68,6 +69,7 @@ const Chatbot = ({
       customStyles={{ ...customStyles }}
       headerText={headerText}
       placeholderText={placeholderText}
+      fetch_rate = {fetch_rate}
     />
   );
 };
