@@ -17,26 +17,32 @@ const Chat = ({
   widgetRegistry,
   messageParser,
   customComponents,
-  botName,
   customStyles,
   headerText,
   placeholderText,
+  fetch_rate
 }) => {
   const { messages } = state;
   const chatContainerRef = useRef(null);
 
   const [input, setInputValue] = useState("");
-  
+
   const scrollIntoView = () => {
     setTimeout(() => {
       chatContainerRef.current.scrollTop =
         chatContainerRef.current.scrollHeight;
     }, 50);
   };
-
   useEffect(() => {
     scrollIntoView();
   });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      console.log('This will run every two second!');
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   const showAvatar = (messages, index) => {
     if (index === 0) return true;
@@ -130,20 +136,8 @@ const Chat = ({
     placeHolder = placeholderText;
   }
 
-
-  const IntervalExample = () => {
-    const [seconds, setSeconds] = useState(0);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setSeconds(seconds => seconds + 1);
-      }, 1000);
-      return () => clearInterval(interval);
-    }, []);
-
   return (
     <div className="react-chatbot-kit-chat-container">
-      {seconds} seconds have elapsed since mounting.
       <div className="react-chatbot-kit-chat-inner-container">
         <ConditionallyRender
           ifTrue={customComponents.header}
@@ -183,8 +177,6 @@ const Chat = ({
       </div>
     </div>
   );
-
-
 };
 
 export default Chat;

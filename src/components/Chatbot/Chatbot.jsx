@@ -65,11 +65,11 @@ const Chatbot = ({
       widgetRegistry={widgetRegistry}
       messageParser={messagePars}
       customComponents={{ ...customComponents }}
-      botName={botName}
       customStyles={{ ...customStyles }}
       headerText={headerText}
       placeholderText={placeholderText}
       fetch_rate = {fetch_rate}
+      action_provider = {action_provider}
     />
   );
 };
