@@ -86,15 +86,6 @@ const ChatbotMessage = ({
                   show={<Loader />}
                   elseShow={<span>{message}</span>}
                 />
-                <ConditionallyRender
-                  ifTrue={withAvatar}
-                  show={
-                    <div
-                      className="react-chatbot-kit-chat-bot-message-arrow"
-                      style={arrowCustomStyles}
-                    ></div>
-                  }
-                />
               </div>
             }
           />
