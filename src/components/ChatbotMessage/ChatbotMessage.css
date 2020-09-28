@@ -13,7 +13,6 @@ z-index:1;
   border-radius: 50%;
   font-size: 1.2rem;
   margin-right: 12.5px;
-  /*background-color: #d8d8d8;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,13 +30,12 @@ z-index:1;
 }
 
 .react-chatbot-kit-chat-bot-message {
-  font-size: 20px;
+  font-size: 15px!important;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: normal;
-  background-color: #E5E5EA;
+  font-weight: normal!important;
+  background-color: #E5E5EA!important;
   padding: 10px 20px;
   border-radius: 25px;
-  font-size: 0.9rem;
   color: black;
   /*font-weight: medium;*/
   position: relative;
