@@ -2,6 +2,7 @@
   display: flex;
   margin: 15px 0;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .react-chatbot-kit-chat-bot-avatar-container {
