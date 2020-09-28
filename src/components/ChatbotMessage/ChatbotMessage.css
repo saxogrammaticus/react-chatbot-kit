@@ -28,16 +28,38 @@
 }
 
 .react-chatbot-kit-chat-bot-message {
-  background-color: #2898ec;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: #E5E5EA;
+  padding: 10px 20px;
+  border-radius: 25px;
   font-size: 0.9rem;
-  color: #fff;
+  color: black;
   font-weight: medium;
   position: relative;
   width: 184.5px;
   margin-left: auto;
   text-align: left;
+}
+
+.react-chatbot-kit-chat-bot-message::before {
+  content: "";
+  position:absolute;
+  bottom:-2px;
+  height:20px;
+  left:-7px;
+  border-left:20px solid #386c7e;
+  border-bottom-right-radius: 16px 14px;
+  transform:translate(0, -2px);
+}
+.react-chatbot-kit-chat-bot-message::after {
+  content: "";
+  position:absolute;
+  bottom:-2px;
+  height:20px;
+  left:4px;
+  width:26px;
+  background:white;
+  border-bottom-right-radius: 10px;
+  transform:translate(-30px, -2px);
 }
 
 .react-chatbot-kit-chat-bot-message-arrow {

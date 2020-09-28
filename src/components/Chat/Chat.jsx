@@ -41,7 +41,7 @@ const Chat = ({
   useEffect(() => {
     const interval = setInterval(() => {
       action_provider.fetch_message();
-    }, 2000);
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 
