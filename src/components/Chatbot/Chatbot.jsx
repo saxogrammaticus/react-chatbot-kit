@@ -55,7 +55,7 @@ const Chatbot = ({
   const widgetRegistry = new WidgetRegistry(setState, actionProv);
   const messagePars = new messageParser(actionProv, state);
 
-  const widgets = getWidgets(zconfig);
+  const widgets = getWidgets(config);
   widgets.forEach((widget) => widgetRegistry.addWidget(widget));
 
   return (
