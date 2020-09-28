@@ -21,6 +21,10 @@
   width: 15px;
   height: 15px;
 }
+.react-chatbot-kit-user-avatar {
+  z-index:1;
+}
+
 
 .react-chatbot-kit-user-chat-message {
   background-color: #0B93F6;
