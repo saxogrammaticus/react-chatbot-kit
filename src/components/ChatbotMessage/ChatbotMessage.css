@@ -31,12 +31,15 @@ z-index:1;
 }
 
 .react-chatbot-kit-chat-bot-message {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
   background-color: #E5E5EA;
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 0.9rem;
   color: black;
-  font-weight: medium;
+  /*font-weight: medium;*/
   position: relative;
   width: 184.5px;
   margin-left: auto;
@@ -49,7 +52,7 @@ z-index:1;
   bottom:-2px;
   height:20px;
   left:-7px;
-  border-left:20px solid #386c7e;
+  border-left:20px solid #E5E5EA;
   border-bottom-right-radius: 16px 14px;
   transform:translate(0, -2px);
 }
