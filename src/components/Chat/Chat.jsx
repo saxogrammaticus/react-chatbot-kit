@@ -39,10 +39,11 @@ const Chat = ({
   });
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    action_provider.fetch_message();
+    /*const fetch = setInterval(() => {
       action_provider.fetch_message();
-    }, 1000);
-    return () => clearInterval(interval);
+    }, 3000);
+    return () => clearInterval(interval);*/
   }, []);
 
   const showAvatar = (messages, index) => {
