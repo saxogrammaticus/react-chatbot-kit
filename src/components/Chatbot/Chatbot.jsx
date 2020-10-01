@@ -29,6 +29,7 @@ const Chatbot = ({
     );
   }
 
+
   const propsErrors = validateProps(config, messageParser);
 
   if (propsErrors.length) {
